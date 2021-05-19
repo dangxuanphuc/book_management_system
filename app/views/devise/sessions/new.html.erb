@@ -8,7 +8,7 @@
             <h1 class="text-center text-uppercase">
               <%= t "layouts.header.login" %>
             </h1><hr>
-            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <%= form_for(resource, as: resource_name, url: new_user_session_path(resource_name)) do |f| %>
               <div class="form-group pmd-textfield pmd-textfield-floating-label">
                 <%= f.label :email, class: "control-label pmd-input-group-label" %>
                 <div class="input-group">
